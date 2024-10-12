@@ -1,0 +1,13 @@
+name: Twitter clone
+entities:
+  Tweet 🐦:
+    properties:
+      - { name: content, type: text }
+      - { name: createdAt, type: timestamp }
+    belongsTo:
+      - User
+
+  User 👤:
+    properties:
+      - name
+      - { name: avatar, type: image }
